@@ -1,0 +1,4 @@
+[15:57:44] [ServerMain/INFO]: [MultiPaperConnection] Connecting to 127.0.0.1:35353...
+[15:57:44] [MultiPaper-Netty-2/INFO]: [MultiPaperConnection] Connected to 127.0.0.1/127.0.0.1:35353
+[15:58:05] [ServerMain/WARN]: Failed to load eula.txt
+[15:58:05] [ServerMain/INFO]: You need to agree to the EULA in order to run the server. Go to eula.txt for more info.
