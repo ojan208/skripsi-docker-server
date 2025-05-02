@@ -31,7 +31,7 @@ resource "google_compute_instance" "master-server" {
 	git clone https://github.com/ojan208/skripsi-docker-server.git /home/skripsi-docker-server
 	sudo tcpdump -w /home/worker-2-captured_packets.pcap tcp &
 	cd /home/skripsi-docker-server/master
-	java -jar multipaper-master-2.12.3-all.jar
+	nohup java -jar multipaper-master-2.12.3-all.jar &
 	EOF
 }
 
