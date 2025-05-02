@@ -52,7 +52,7 @@ locals {
 resource "google_compute_instance" "worker-server" {
 	for_each = local.worker
 	name = each.key
-	machine_type = "e2-standard-2"
+	machine_type = "e2-medium"
 	zone = each.value
 	tags = [ "minecraft" ]
 
