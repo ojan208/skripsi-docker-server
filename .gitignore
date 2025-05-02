@@ -1,1 +1,3 @@
 saved-images/
+.terraform.lock.hcl
+.terraform/

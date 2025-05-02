@@ -11,7 +11,7 @@ resource "google_compute_instance" "master-server" {
 
     boot_disk {
         initialize_params {
-          image = "debian-cloud/debian-11"
+          image = "debian-cloud/debian-12-bookworm"
           type = "pd-ssd"
 		  size = 10
         }
@@ -53,7 +53,7 @@ resource "google_compute_instance" "worker-1" {
 
 	boot_disk {
 		initialize_params {
-			image = "debian-cloud/debian-11"
+			image = "debian-cloud/debian-12-bookworm"
 			type = "pd-ssd"
 			size = 10
 		}
@@ -90,7 +90,7 @@ resource "google_compute_instance" "worker-2" {
 
 	boot_disk {
 		initialize_params {
-			image = "debian-cloud/debian-11"
+			image = "debian-cloud/debian-12-bookworm"
 			type = "pd-ssd"
 			size = 10
 		}
