@@ -74,7 +74,7 @@ resource "google_compute_instance" "worker-1" {
 	sudo tcpdump -w /home/worker-2-captured_packets.pcap tcp &
 	cd /home/skripsi-docker-server/worker 
 	chmod +x run_server.sh
-	./run_server.sh worker-1 ${google_compute_instance.master-server.network_interface.0.network_ip}:35353
+	nohup ./run_server.sh worker-1 ${google_compute_instance.master-server.network_interface.0.network_ip}:35353 &
 	EOF
 
 	depends_on = [ 
@@ -111,7 +111,7 @@ resource "google_compute_instance" "worker-2" {
 	sudo tcpdump -w /home/worker-2-captured_packets.pcap tcp &
 	cd /home/skripsi-docker-server/worker 
 	chmod +x run_server.sh
-	./run_server.sh worker-2 ${google_compute_instance.master-server.network_interface.0.network_ip}:35353
+	nohup ./run_server.sh worker-2 ${google_compute_instance.master-server.network_interface.0.network_ip}:35353 &
 	EOF
 
 	depends_on = [ 
