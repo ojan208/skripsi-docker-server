@@ -16,5 +16,5 @@ if [ -z "${SERVER_NAME}" ] || [ -z "${MASTER_ADDRESS}" ];
     sed -i -e $"s/^  master-address:.*/  master-address: ${MASTER_ADDRESS}/" multipaper.yml
 
     echo "server starting"
-    java -jar multipaper-1.20.1-57.jar
+    java -jar multipaper-1.20.1-57.jar &
 fi
