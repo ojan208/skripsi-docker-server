@@ -40,7 +40,7 @@ variable "zones" {
 	default = [ 
 		"southeast2",
 		"south2",
-		"northeast1",
+		"southeast1",
 		"east1",
 	]
 }
